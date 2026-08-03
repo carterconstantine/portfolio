@@ -1,5 +1,6 @@
 <script>
 	import favicon from '$lib/assets/carter.png';
+	import '../app.css';
 
 	let { children } = $props();
 </script>

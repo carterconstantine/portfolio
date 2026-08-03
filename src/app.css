@@ -1,0 +1,19 @@
+@import "styles/theme.css";
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: sans-serif;
+}
+
+a {
+    color: var(--link);
+}
+
+a:visited {
+    color: var(--link-visited);
+}
+
+a:active {
+    color: var(--link-active);
+}
