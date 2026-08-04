@@ -2,6 +2,8 @@
     import Tag from "$lib/Tag.svelte";
     import NavButton from "$lib/NavButton.svelte";
 
+    import GithubIcon from "$lib/assets/GithubIcon.svelte";
+
     let { title, description, tags, link } = $props();
 </script>
 
@@ -13,12 +15,12 @@
     <div class="bottom">
         <div class="tags">
             {#each tags as tag}
-                <Tag text={tag} />
+                <Tag {...tag} />
             {/each}
         </div>
 
         <div class="button">
-            <NavButton text="Source Code" {link} />
+            <NavButton text="Source Code" {link} icon={GithubIcon} />
         </div>
     </div>
 </div>
@@ -45,14 +47,13 @@
         align-items: center;
         justify-content: space-between;
         margin-top: auto;
+        margin-bottom: 1rem;
+        white-space: nowrap;
     }
     .tags {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
-    }
-    .button {
-        white-space: nowrap;
     }
 
 </style>
