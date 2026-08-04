@@ -1,8 +1,1 @@
-<script>
-    import Projects from "$lib/Projects.svelte"
-    import Hero from "$lib/Hero.svelte"
-</script>
-
-<Hero title="Carter Constantine"/>
-
-<Projects />
+<p>home page coming soon (check out the other pages though, they're closer to being done!)</p>

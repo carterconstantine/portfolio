@@ -1,18 +1,31 @@
 <script>
-    let { text, link, icon:Icon } = $props();
+    let { text, copytext, icon:Icon } = $props();
+
+    let copied = $state(false);
+
+    async function copyText() {
+        await navigator.clipboard.writeText(copytext);
+        copied = true;
+
+        setTimeout(() => {
+            copied = false;
+        }, 2000);
+    }
 </script>
 
-<a href={link} class="nav-button">
+<button class:copied class="copy-button" onclick={copyText}>
     {#if Icon}
         <span class="icon"><Icon /></span>
     {/if}
-    {text}
-</a>
+    {copied ? "Copied!" : text}
+</button>
 
 <style>
     @import "../styles/theme.css";
-    .nav-button {
+    .copy-button {
         display: inline-flex;
+        font: inherit;
+        line-height: inherit;
         gap: 0.375rem;
         padding: 0.5rem;
         border-radius: 9999px;
@@ -21,8 +34,9 @@
         color: var(--bg-tertiary);
         text-align: center;
         text-decoration: none;
+        cursor: pointer;
     }
-    .nav-button:active {
+    .copy-button:active {
         background-color: var(--bg-tertiary);
         color: var(--accent)
     }
