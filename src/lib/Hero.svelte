@@ -7,6 +7,6 @@
 <style>
     h1 {
         text-align: center;
-        font-size: 5rem
+        font-size: clamp(3rem, 4rem, 5rem)
     }
 </style>
