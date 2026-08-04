@@ -18,8 +18,8 @@
     --label-muted:  var(--ctp-subtext0);
     --subtle:       var(--ctp-overlay1);
     --on-accent:    var(--ctp-base);
-    --accent:       var(--ctp-blue);
-    --accent-hover: var(--ctp-sky);
+    --accent:       var(--ctp-lavender);
+    --accent-hover: var(--ctp-mauve);
     --link:         var(--ctp-blue);
     --link-visited: var(--ctp-mauve);
     --link-active:  var(--ctp-red);

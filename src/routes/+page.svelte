@@ -1,2 +1,8 @@
-<h1>Coming Soon</h1>
-<a href="https://github.com/carterconstantine">https://github.com/carterconstantine</a>
+<script>
+    import Projects from "$lib/Projects.svelte"
+    import Hero from "$lib/Hero.svelte"
+</script>
+
+<Hero title="Carter Constantine"/>
+
+<Projects />
