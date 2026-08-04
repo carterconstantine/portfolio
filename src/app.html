@@ -1,7 +1,7 @@
 <!doctype html>
 
 <script>
-	document.documentElement.dataset.theme = 'mocha';
+	document.documentElement.dataset.theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "mocha" : "latte";
 </script>
 
 <html lang="en">
