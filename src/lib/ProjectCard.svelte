@@ -1,7 +1,8 @@
 <script>
     import Tag from "$lib/Tag.svelte";
+    import NavButton from "$lib/NavButton.svelte";
 
-    let { title, description, tags } = $props();
+    let { title, description, tags, link } = $props();
 </script>
 
 <div class="card">
@@ -9,10 +10,16 @@
 
     <p>{description}</p>
 
-    <div class="tags">
-        {#each tags as tag}
-            <Tag text={tag} />
-        {/each}
+    <div class="bottom">
+        <div class="tags">
+            {#each tags as tag}
+                <Tag text={tag} />
+            {/each}
+        </div>
+
+        <div class="button">
+            <NavButton text="Source Code" {link} />
+        </div>
     </div>
 </div>
 
@@ -33,10 +40,16 @@
     p {
         padding: 0;
     }
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: auto;
+    }
     .tags {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
-        margin: auto 0 0;
     }
+
 </style>

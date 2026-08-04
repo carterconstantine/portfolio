@@ -11,7 +11,7 @@
         border-radius: 9999px;
         border: 1px solid var(--accent);
         background-color: var(--bg-tertiary);
-        color: var(--text);
+        color: var(--accent);
         text-align: center;
     }
 </style>
