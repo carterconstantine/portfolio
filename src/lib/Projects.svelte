@@ -5,7 +5,7 @@
         {
             title: 'My Website',
             description: 'This website is a website I created to act as a way to showcase my projects and unique skills. I\'m very new to web dev, so while this website is unpolished and lacking in features right now, it will be improved as I learn more.',
-            tags: ['Svelte', 'Javascript', 'CSS'],
+            tags: ['Svelte', 'CSS'],
             link: "https://github.com/carterconstantine/website"
         },
         {

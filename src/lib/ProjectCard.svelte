@@ -51,5 +51,8 @@
         flex-wrap: wrap;
         gap: 0.5rem;
     }
+    .button {
+        white-space: nowrap;
+    }
 
 </style>
