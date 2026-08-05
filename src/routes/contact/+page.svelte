@@ -1,9 +1,10 @@
 <script>
     import ContactCard from "$lib/ContactCard.svelte";
-    import MailIcon from "$lib/assets/MailIcon.svelte"
-    import CopyIcon from "$lib/assets/CopyIcon.svelte"
-    import GithubIcon from "$lib/assets/GithubIcon.svelte"
-    import LinkedInIcon from "$lib/assets/LinkedInIcon.svelte"
+
+    import MailIcon from "~icons/mdi/email-outline"
+    import CopyIcon from "~icons/mdi/content-copy"
+    import GithubIcon from "~icons/mdi/github";
+    import LinkedInIcon from "~icons/mdi/linkedin"
 
     const contacts = [
         {

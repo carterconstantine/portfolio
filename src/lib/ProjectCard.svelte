@@ -2,7 +2,7 @@
     import Tag from "$lib/Tag.svelte";
     import NavButton from "$lib/NavButton.svelte";
 
-    import GithubIcon from "$lib/assets/GithubIcon.svelte";
+    import GithubIcon from "~icons/mdi/github";
 
     let { title, description, tags, link } = $props();
 </script>

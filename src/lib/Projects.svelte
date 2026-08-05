@@ -1,9 +1,9 @@
 <script>
     import ProjectCard from './ProjectCard.svelte';
 
-    import SvelteIcon from '$lib/assets/SvelteIcon.svelte';
-    import CSSIcon from '$lib/assets/CSSIcon.svelte';
-    import PythonIcon from '$lib/assets/PythonIcon.svelte';
+    import SvelteIcon from '~icons/ri/svelte-fill';
+    import CSSIcon from '~icons/simple-icons/css';
+    import PythonIcon from '~icons/griddy-icons/python';
 
     const projects = [
         {

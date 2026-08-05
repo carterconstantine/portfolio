@@ -4,7 +4,7 @@
 
 <a href={link} class="nav-button">
     {#if Icon}
-        <span class="icon"><Icon /></span>
+        <div class="icon"><Icon /></div>
     {/if}
     {text}
 </a>
@@ -19,7 +19,6 @@
         border: 1px solid var(--accent);
         background-color: var(--accent);
         color: var(--bg-tertiary);
-        text-align: center;
         text-decoration: none;
     }
     .nav-button:active {
@@ -27,7 +26,7 @@
         color: var(--accent)
     }
     .icon {
-        width: 1rem;
-        height: 1rem;
+        width: 1em;
+        height: 1em;
     }
 </style>
