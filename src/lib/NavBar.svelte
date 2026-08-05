@@ -6,7 +6,7 @@
     <li><a href="/" class:active={page.url.pathname === "/"}>Home</a></li>
     <li><a href="/projects" class:active={page.url.pathname === "/projects"}>Projects</a></li>
     <li><a href="/contact" class:active={page.url.pathname === "/contact"}>Contact</a></li>
-    <li><a href="/about" class:active={page.url.pathname === "/about"}>About</a></li>
+    <li style="margin-left: auto"><a href="/about" class:active={page.url.pathname === "/about"}>About</a></li>
 </ul>
 
 <style>
