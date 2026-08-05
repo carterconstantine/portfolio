@@ -53,13 +53,13 @@
         cursor: pointer;
         transition: transform 0.15s, background-color 0.15s;
     }
-    .button:active {
-        background-color: var(--bg-tertiary);
-        color: var(--accent)
-    }
     .button:hover {
         transform: scale(110%);
         background-color: color-mix(in srgb, var(--accent), white 20%);
+    }
+    .button:active {
+        background-color: var(--bg-tertiary);
+        color: var(--accent)
     }
     .icon {
         width: 1em;
