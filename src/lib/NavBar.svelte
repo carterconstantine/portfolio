@@ -26,6 +26,7 @@
         color: var(--text);
         padding: 14px 16px;
         text-decoration: none;
+        transition: background-color 0.15s;
     }
 
     ul li a:hover {

@@ -1,5 +1,5 @@
 <script>
-    let { text, copytext, icon:Icon } = $props();
+    let { href, onclick, copytext, text, icon: Icon } = $props();
 
     let copied = $state(false);
 
@@ -13,16 +13,33 @@
     }
 </script>
 
-<button class:copied class="copy-button" onclick={copyText}>
-    {#if Icon}
-        <span class="icon"><Icon /></span>
-    {/if}
-    {copied ? "Copied!" : text}
-</button>
+{#if href}
+    <a href={href} class="button">
+        <span class="icon">
+            <Icon />
+        </span>
+        {text}
+    </a>
+{:else if copytext}
+    <button class="button" onclick={copyText}>
+        <span class="icon">
+            <Icon />
+        </span>
+        {copied ? "Copied!" : text}
+    </button>
+{:else}
+    <button class="button" onclick={onclick}>
+        <span class="icon">
+            <Icon />
+        </span>
+        {text}
+    </button>
+{/if}
 
 <style>
     @import "../styles/theme.css";
-    .copy-button {
+
+    .button {
         display: inline-flex;
         font: inherit;
         line-height: inherit;
@@ -34,14 +51,18 @@
         color: var(--bg-tertiary);
         text-decoration: none;
         cursor: pointer;
+        transition: transform 0.15s, background-color 0.15s;
     }
-    .copy-button:active {
+    .button:active {
         background-color: var(--bg-tertiary);
         color: var(--accent)
+    }
+    .button:hover {
+        transform: scale(110%);
+        background-color: color-mix(in srgb, var(--accent), white 20%);
     }
     .icon {
         width: 1em;
         height: 1em;
-        vertical-align: middle;
     }
 </style>

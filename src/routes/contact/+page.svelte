@@ -10,14 +10,14 @@
         {
             title: "Dev Email",
             description: "My main contact email is contact@carterconst.dev, please use this email for contacting me about my projects or business opportunities.",
-            navButtons: [
+            leftButtons: [
                 {
                     "text": "Open Email",
-                    "link": "mailto:contact@carterconst.dev",
+                    "href": "mailto:contact@carterconst.dev",
                     "icon": MailIcon,
                 }
             ],
-            copyButtons: [
+            rightButtons: [
                 {
                     "text": "Copy Email",
                     "copytext": "contact@carterconst.dev",
@@ -28,14 +28,14 @@
         {
             title: "Personal Email",
             description: "My personal email is constantine.carter09@gmail.com, feel free to use this for everything else!",
-            navButtons: [
+            leftButtons: [
                 {
                     "text": "Open Email",
-                    "link": "mailto:constantine.carter09@gmail.com",
+                    "href": "mailto:constantine.carter09@gmail.com",
                     "icon": MailIcon,
                 }
             ],
-            copyButtons: [
+            rightButtons: [
                 {
                     "text": "Copy Email",
                     "copytext": "constantine.carter09@gmail.com",
@@ -46,7 +46,7 @@
         {
             title: "Discord",
             description: "My Discord username is carterconst, reach out on here for more chill conversations if you don't want to use email.",
-            copyButtons: [
+            rightButtons: [
                 {
                     "text": "Copy Username",
                     "copytext": "carterconst",
@@ -57,14 +57,14 @@
         {
             title: "Github",
             description: "My Github username is carterconstantine, you can check out my projects here or submit bug reports on the Issues tab of my projects.",
-            navButtons: [
+            leftButtons: [
                 {
                     "text": "Open Github",
-                    "link": "https://github.com/carterconstantine",
+                    "href": "https://github.com/carterconstantine",
                     "icon": GithubIcon,
                 }
             ],
-            copyButtons: [
+            rightButtons: [
                 {
                     "text": "Copy Username",
                     "copytext": "carterconstantine",
@@ -75,10 +75,10 @@
         {
             title: "LinkedIn",
             description: "I don't use LinkedIn much since I'm not actively looking for a job or internships, but feel free to connect with me here!",
-            navButtons: [
+            leftButtons: [
                 {
                     "text": "Open LinkedIn",
-                    "link": "https://linkedin.com/in/carterconst",
+                    "href": "https://linkedin.com/in/carterconst",
                     "icon": LinkedInIcon,
                 }
             ]

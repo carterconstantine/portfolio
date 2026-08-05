@@ -1,6 +1,6 @@
 <script>
     import Tag from "$lib/Tag.svelte";
-    import NavButton from "$lib/NavButton.svelte";
+    import Button from "$lib/Button.svelte";
 
     import GithubIcon from "~icons/mdi/github";
 
@@ -20,7 +20,7 @@
         </div>
 
         <div class="button">
-            <NavButton text="Source Code" {link} icon={GithubIcon} />
+            <Button text="Source Code" href = {link} icon={GithubIcon} />
         </div>
     </div>
 </div>

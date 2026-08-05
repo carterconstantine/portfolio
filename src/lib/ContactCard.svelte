@@ -1,8 +1,7 @@
 <script>
-    import NavButton from "$lib/NavButton.svelte";
-    import CopyButton from "$lib/CopyButton.svelte";
+    import Button from "$lib/Button.svelte";
 
-    let { title, description, navButtons, copyButtons } = $props();
+    let { title, description, leftButtons, rightButtons } = $props();
 </script>
 
 <div class="card">
@@ -11,15 +10,15 @@
     <p>{description}</p>
 
     <div class="bottom">
-        <div class="nav-buttons">
-            {#each navButtons as button}
-                <NavButton {...button} />
+        <div class="left-buttons">
+            {#each leftButtons as button}
+                <Button {...button} />
             {/each}
         </div>
 
-        <div class="copy-buttons">
-            {#each copyButtons as button}
-                <CopyButton {...button} />
+        <div class="right-buttons">
+            {#each rightButtons as button}
+                <Button {...button} />
             {/each}
         </div>
     </div>
